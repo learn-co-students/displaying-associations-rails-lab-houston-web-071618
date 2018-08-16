@@ -1,0 +1,7 @@
+<h1><%= @artist.name %></h1>
+<p>I want all the songs that belong to this artist to be here.</p>
+<ul>
+<% @artist.songs.each do |s| %>
+<li><%= link_to s.title, song_path(s) %></li>
+<% end %>
+</ul>

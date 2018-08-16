@@ -1,0 +1,5 @@
+<!-- lists songs in 'Artist Name - Song Title' format (FAILED - 2) -->
+<!-- links to the artist (FAILED - 3) -->
+
+<!-- This page is a single song -->
+<h1><%= link_to @song.artist_name, artist_path(@song.artist) %> - <%= @song.title %></h1>
